@@ -2,91 +2,134 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Criar Skills</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crial Skills</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #121212;
-      color: #eee;
-      margin: 0;
-      padding: 20px;
+    :root {
+      --bg: #121212;
+      --panel: #1e1e1e;
+      --input: #2c2c2c;
+      --accent: #f43f5e;
+      --accent-hover: #e11d48;
     }
 
-    h1 {
-      text-align: center;
-      color: #f43f5e;
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: #eee;
+      margin: 0;
+      padding: 0;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 960px;
       margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background: var(--input);
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
     }
 
     .skill, .effect {
-      background: #1e1e1e;
+      background: var(--panel);
       padding: 16px;
       margin-bottom: 20px;
       border-radius: 12px;
       box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
     }
 
-    label {
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    input, select {
-      width: 100%;
-      padding: 8px;
-      border: none;
-      border-radius: 6px;
-      background: #2c2c2c;
-      color: #fff;
-      margin-top: 4px;
-      margin-bottom: 12px;
-    }
-
-    input[type="checkbox"] {
-      width: auto;
+    .effect {
+      background: #232323;
     }
 
     button {
-      background-color: #f43f5e;
+      background-color: var(--accent);
       color: #fff;
       border: none;
       padding: 10px 16px;
       border-radius: 8px;
       cursor: pointer;
       transition: background 0.3s;
-      margin-top: 10px;
+      margin: 10px 0;
     }
 
     button:hover {
-      background-color: #e11d48;
+      background-color: var(--accent-hover);
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     pre {
-      background: #1e1e1e;
+      background: var(--panel);
       padding: 20px;
       border-radius: 12px;
       color: #a0f0ff;
       white-space: pre-wrap;
       word-break: break-word;
       overflow: auto;
+      max-height: 500px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+
+      button {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Editor de Skills</h1>
+
+    <div class="actions">
+      <label>Quantidade de Skills:
+        <input type="number" id="skill-count" min="1" max="100" placeholder="17" />
+      </label>
+      <button onclick="generateSkills()">Gerar Skills</button>
+    </div>
+
     <div id="skills-container"></div>
-    <button onclick="addSkill()">Adicionar Skill</button>
+
     <h2>JSON Gerado:</h2>
     <pre id="json-preview">[]</pre>
   </div>
 
   <script>
-    const MAX_SKILLS = 16;
     const skills = [];
     const effectTypes = {
       DAMAGE: 1,
@@ -128,10 +171,7 @@
       return effectDiv;
     }
 
-    function addSkill() {
-      if (skills.length >= MAX_SKILLS) return;
-
-      const container = document.getElementById('skills-container');
+    function createSkill() {
       const skillDiv = document.createElement('div');
       skillDiv.className = 'skill';
 
@@ -151,10 +191,24 @@
       };
       skillDiv.appendChild(addEffectBtn);
 
-      container.appendChild(skillDiv);
-      skills.push(skillDiv);
-
       skillDiv.addEventListener('input', updateJson);
+      return skillDiv;
+    }
+
+    function generateSkills() {
+      const container = document.getElementById('skills-container');
+      container.innerHTML = '';
+      skills.length = 0;
+
+      let count = parseInt(document.getElementById('skill-count').value);
+      if (isNaN(count) || count <= 0) count = 17;
+
+      for (let i = 0; i < count; i++) {
+        const skill = createSkill();
+        skills.push(skill);
+        container.appendChild(skill);
+      }
+
       updateJson();
     }
 
