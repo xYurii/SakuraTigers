@@ -1,1 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Criar Skills</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+    }
 
+    h1 {
+      text-align: center;
+      color: #f43f5e;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .skill, .effect {
+      background: #1e1e1e;
+      padding: 16px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 6px;
+      background: #2c2c2c;
+      color: #fff;
+      margin-top: 4px;
+      margin-bottom: 12px;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+    }
+
+    button {
+      background-color: #f43f5e;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #e11d48;
+    }
+
+    pre {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      color: #a0f0ff;
+      white-space: pre-wrap;
+      word-break: break-word;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Editor de Skills</h1>
+    <div id="skills-container"></div>
+    <button onclick="addSkill()">Adicionar Skill</button>
+    <h2>JSON Gerado:</h2>
+    <pre id="json-preview">[]</pre>
+  </div>
+
+  <script>
+    const MAX_SKILLS = 16;
+    const skills = [];
+    const effectTypes = {
+      DAMAGE: 1,
+      HEAL: 2,
+      STUN: 3,
+      SHIELD: 4,
+      FRAGILITY: 5,
+      REFLECT_DAMAGE: 6,
+    };
+
+    function createInput(label, name, type = 'text', step = 'any') {
+      const div = document.createElement('div');
+      div.innerHTML = `<label>${label}<input name="${name}" type="${type}" step="${step}" /></label>`;
+      return div;
+    }
+
+    function createEffectForm() {
+      const effectDiv = document.createElement('div');
+      effectDiv.className = 'effect';
+
+      effectDiv.appendChild(createInput('Nome do Efeito', 'name'));
+      effectDiv.appendChild(createInput('Range Mínimo', 'rangeMin', 'number'));
+      effectDiv.appendChild(createInput('Range Máximo', 'rangeMax', 'number'));
+      effectDiv.appendChild(createInput('Frase', 'phrase'));
+      effectDiv.appendChild(createInput('Turnos', 'turns', 'number'));
+      effectDiv.appendChild(createInput('Chances (0.0 - 1.0)', 'chances', 'number', '0.01'));
+
+      const selfDiv = document.createElement('div');
+      selfDiv.innerHTML = `<label><input type="checkbox" name="self" /> Self</label>`;
+      effectDiv.appendChild(selfDiv);
+
+      const typeDiv = document.createElement('div');
+      const typeOptions = Object.entries(effectTypes).map(
+        ([key, val]) => `<option value="${val}">${key}</option>`
+      ).join('');
+      typeDiv.innerHTML = `<label>Tipo<select name="type">${typeOptions}</select></label>`;
+      effectDiv.appendChild(typeDiv);
+
+      return effectDiv;
+    }
+
+    function addSkill() {
+      if (skills.length >= MAX_SKILLS) return;
+
+      const container = document.getElementById('skills-container');
+      const skillDiv = document.createElement('div');
+      skillDiv.className = 'skill';
+
+      skillDiv.appendChild(createInput('Nome da Skill', 'name'));
+      skillDiv.appendChild(createInput('Dano Mínimo', 'damageMin', 'number'));
+      skillDiv.appendChild(createInput('Dano Máximo', 'damageMax', 'number'));
+      skillDiv.appendChild(createInput('Level', 'level', 'number'));
+
+      const addEffectBtn = document.createElement('button');
+      addEffectBtn.textContent = 'Adicionar Efeito';
+      addEffectBtn.onclick = () => {
+        if (!skillDiv.querySelector('.effect')) {
+          const effectForm = createEffectForm();
+          skillDiv.appendChild(effectForm);
+          updateJson();
+        }
+      };
+      skillDiv.appendChild(addEffectBtn);
+
+      container.appendChild(skillDiv);
+      skills.push(skillDiv);
+
+      skillDiv.addEventListener('input', updateJson);
+      updateJson();
+    }
+
+    function getValue(input, isNumber = false) {
+      if (!input) return isNumber ? 0 : '';
+      const val = input.value;
+      if (isNumber) return isNaN(val) || val === '' ? 0 : Number(val);
+      return val || '';
+    }
+
+    function updateJson() {
+      const data = skills.map(skillDiv => {
+        const obj = {
+          name: getValue(skillDiv.querySelector('[name="name"]')),
+          damage: [
+            getValue(skillDiv.querySelector('[name="damageMin"]'), true),
+            getValue(skillDiv.querySelector('[name="damageMax"]'), true)
+          ],
+          level: getValue(skillDiv.querySelector('[name="level"]'), true),
+        };
+
+        const effectEl = skillDiv.querySelector('.effect');
+        if (effectEl) {
+          obj.effect = {
+            name: getValue(effectEl.querySelector('[name="name"]')),
+            range: [
+              getValue(effectEl.querySelector('[name="rangeMin"]'), true),
+              getValue(effectEl.querySelector('[name="rangeMax"]'), true)
+            ],
+            phrase: getValue(effectEl.querySelector('[name="phrase"]')),
+            turns: getValue(effectEl.querySelector('[name="turns"]'), true),
+            chances: parseFloat(getValue(effectEl.querySelector('[name="chances"]'), true)) || 0,
+            self: effectEl.querySelector('[name="self"]')?.checked || false,
+            type: getValue(effectEl.querySelector('[name="type"]'), true),
+          };
+        }
+
+        return obj;
+      });
+
+      document.getElementById('json-preview').textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>
