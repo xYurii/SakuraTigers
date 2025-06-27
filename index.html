@@ -2,27 +2,46 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Criar Skills</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+
   <style>
     :root {
-      --bg: #121212;
-      --panel: #1e1e1e;
-      --input: #2c2c2c;
+      --bg: #0d0d0d;
+      --panel: #1b1b1b;
+      --input: #2a2a2a;
       --accent: #f43f5e;
       --accent-hover: #e11d48;
+      --text: #e0e0e0;
     }
 
-    * {
-      box-sizing: border-box;
+    [data-theme="light"] {
+      --bg: #f2f2f2;
+      --panel: #ffffff;
+      --input: #eaeaea;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+      --text: #111;
     }
+    
+    [data-theme="light"] .effect {
+      background: #f7f7f7;
+      color: #111;
+      border: 1px solid #ddd;
+    }
+
+    * { box-sizing: border-box; }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--bg);
-      color: #eee;
       margin: 0;
       padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
     }
 
     .container {
@@ -32,101 +51,183 @@
     }
 
     h1, h2 {
-      color: var(--accent);
       text-align: center;
+      color: var(--accent);
+      margin-top: 0;
     }
 
     label {
       display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
+      margin-bottom: 6px;
+      font-weight: 500;
     }
 
     input, select {
       width: 100%;
       padding: 10px;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       background: var(--input);
-      color: #fff;
+      color: var(--text);
       margin-bottom: 12px;
     }
 
     input[type="checkbox"] {
       width: auto;
-      margin-right: 5px;
+      margin-right: 6px;
     }
 
-    .skill, .effect {
+    .skill {
       background: var(--panel);
       padding: 16px;
-      margin-bottom: 20px;
       border-radius: 12px;
-      box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+      margin-bottom: 20px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+      position: relative;
+    }
+
+    .effect-wrapper {
+      padding-left: 10px;
+      margin-top: 15px;
+      border-left: 3px solid var(--accent);
+      transition: all 0.3s ease;
     }
 
     .effect {
       background: #232323;
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transform: scale(0.95);
+      animation: fadeIn 0.3s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+        transform: scale(1);
+      }
+      to {
+        opacity: 0;
+        transform: scale(0.95);
+      }
     }
 
     button {
-      background-color: var(--accent);
-      color: #fff;
+      background: var(--accent);
+      color: white;
       border: none;
-      padding: 10px 16px;
       border-radius: 8px;
+      padding: 10px 18px;
       cursor: pointer;
       transition: background 0.3s;
-      margin: 10px 0;
+      margin: 6px 4px;
     }
 
-    button:hover {
-      background-color: var(--accent-hover);
+    .effect-toggle-btn {
+      background-color: transparent;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+      font-weight: bold;
+      padding: 8px 14px;
+    }
+
+    .effect-toggle-btn:hover {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    .skill-header {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
     }
 
     .actions {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 10px;
       align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: var(--accent);
+      color: white;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .theme-toggle:hover {
+      background-color: var(--accent-hover);
+      transform: scale(1.05);
     }
 
     pre {
       background: var(--panel);
-      padding: 20px;
       border-radius: 12px;
-      color: #a0f0ff;
-      white-space: pre-wrap;
-      word-break: break-word;
+      padding: 20px;
       overflow: auto;
       max-height: 500px;
+      color: var(--text);
+    }
+
+    code[class*="language-"] {
+      font-size: 14px;
+      line-height: 1.5;
     }
 
     @media (max-width: 600px) {
-      .container {
-        padding: 10px;
-      }
-
-      button {
-        width: 100%;
-      }
+      .container { padding: 10px; }
+      button { width: 100%; }
+      .theme-toggle { top: 10px; right: 10px; }
     }
   </style>
 </head>
-<body>
+<body data-theme="dark">
+  <div class="theme-toggle" id="theme-icon" onclick="toggleTheme()" title="Alternar tema">☀️</div>
+
   <div class="container">
-    <h1>Editor de Skills</h1>
+    <h1>Editar Skills</h1>
 
     <div class="actions">
-      <label>Quantidade de Skills:
+      <label>Qtd de Skills:
         <input type="number" id="skill-count" min="1" max="100" placeholder="17" />
       </label>
       <button onclick="generateSkills()">Gerar Skills</button>
+      <button onclick="triggerImport()">Importar JSON</button>
+      <input type="file" id="import-json" accept="application/json" style="display: none;" />
     </div>
 
     <div id="skills-container"></div>
 
     <h2>JSON Gerado:</h2>
-    <pre id="json-preview">[]</pre>
+    <div class="actions">
+      <button onclick="copyJson()">📋 Copiar JSON</button>
+      <button onclick="downloadJson()">⬇️ Baixar JSON</button>
+    </div>
+    <pre><code id="json-preview" class="language-json">[]</code></pre>
   </div>
 
   <script>
@@ -140,13 +241,20 @@
       REFLECT_DAMAGE: 6,
     };
 
+    function toggleTheme() {
+      const current = document.body.getAttribute('data-theme');
+      const next = current === 'light' ? 'dark' : 'light';
+      document.body.setAttribute('data-theme', next);
+      document.getElementById('theme-icon').textContent = next === 'light' ? '🌙' : '☀️';
+    }
+
     function createInput(label, name, type = 'text', step = 'any') {
       const div = document.createElement('div');
       div.innerHTML = `<label>${label}<input name="${name}" type="${type}" step="${step}" /></label>`;
       return div;
     }
 
-    function createEffectForm() {
+    function createEffectForm(effectData = {}) {
       const effectDiv = document.createElement('div');
       effectDiv.className = 'effect';
 
@@ -168,28 +276,68 @@
       typeDiv.innerHTML = `<label>Tipo<select name="type">${typeOptions}</select></label>`;
       effectDiv.appendChild(typeDiv);
 
+      if (effectData && typeof effectData === 'object') {
+        effectDiv.querySelector('[name="name"]').value = effectData.name || '';
+        effectDiv.querySelector('[name="rangeMin"]').value = effectData.range?.[0] ?? 0;
+        effectDiv.querySelector('[name="rangeMax"]').value = effectData.range?.[1] ?? 0;
+        effectDiv.querySelector('[name="phrase"]').value = effectData.phrase || '';
+        effectDiv.querySelector('[name="turns"]').value = effectData.turns ?? 0;
+        effectDiv.querySelector('[name="chances"]').value = effectData.chances ?? 0;
+        effectDiv.querySelector('[name="self"]').checked = effectData.self ?? false;
+        effectDiv.querySelector('[name="type"]').value = effectData.type ?? 1;
+      }
+
       return effectDiv;
     }
 
-    function createSkill() {
+    function createSkill(skillData = {}) {
       const skillDiv = document.createElement('div');
       skillDiv.className = 'skill';
+
+      const header = document.createElement('div');
+      header.className = 'skill-header';
+
+      const toggleEffectBtn = document.createElement('button');
+      toggleEffectBtn.className = 'effect-toggle-btn';
+      toggleEffectBtn.textContent = skillData.effect ? 'Remover Efeito' : 'Adicionar Efeito';
+      header.appendChild(toggleEffectBtn);
+      skillDiv.appendChild(header);
 
       skillDiv.appendChild(createInput('Nome da Skill', 'name'));
       skillDiv.appendChild(createInput('Dano Mínimo', 'damageMin', 'number'));
       skillDiv.appendChild(createInput('Dano Máximo', 'damageMax', 'number'));
       skillDiv.appendChild(createInput('Level', 'level', 'number'));
 
-      const addEffectBtn = document.createElement('button');
-      addEffectBtn.textContent = 'Adicionar Efeito';
-      addEffectBtn.onclick = () => {
-        if (!skillDiv.querySelector('.effect')) {
-          const effectForm = createEffectForm();
-          skillDiv.appendChild(effectForm);
+      skillDiv.querySelector('[name="name"]').value = skillData.name || '';
+      skillDiv.querySelector('[name="damageMin"]').value = skillData.damage?.[0] ?? 0;
+      skillDiv.querySelector('[name="damageMax"]').value = skillData.damage?.[1] ?? 0;
+      skillDiv.querySelector('[name="level"]').value = skillData.level ?? 0;
+
+      const effectWrapper = document.createElement('div');
+      effectWrapper.className = 'effect-wrapper';
+      skillDiv.appendChild(effectWrapper);
+
+      toggleEffectBtn.onclick = () => {
+        const existing = effectWrapper.querySelector('.effect');
+        if (existing) {
+          existing.style.animation = 'fadeOut 0.3s forwards';
+          setTimeout(() => {
+            effectWrapper.innerHTML = '';
+            toggleEffectBtn.textContent = 'Adicionar Efeito';
+            updateJson();
+          }, 300);
+        } else {
+          const effectForm = createEffectForm(skillData.effect);
+          effectWrapper.appendChild(effectForm);
+          toggleEffectBtn.textContent = 'Remover Efeito';
           updateJson();
         }
       };
-      skillDiv.appendChild(addEffectBtn);
+
+      if (skillData.effect) {
+        const effectForm = createEffectForm(skillData.effect);
+        effectWrapper.appendChild(effectForm);
+      }
 
       skillDiv.addEventListener('input', updateJson);
       return skillDiv;
@@ -215,8 +363,7 @@
     function getValue(input, isNumber = false) {
       if (!input) return isNumber ? 0 : '';
       const val = input.value;
-      if (isNumber) return isNaN(val) || val === '' ? 0 : Number(val);
-      return val || '';
+      return isNumber ? Number(val) || 0 : val || '';
     }
 
     function updateJson() {
@@ -249,8 +396,80 @@
         return obj;
       });
 
-      document.getElementById('json-preview').textContent = JSON.stringify(data, null, 2);
+      const preview = document.getElementById('json-preview');
+      preview.textContent = JSON.stringify(data, null, 2);
+      Prism.highlightElement(preview);
     }
+
+    function tryRepairJSON(text) {
+      try {
+        return JSON.parse(text);
+      } catch {
+        const fixed = text
+          .replace(/,\s*}/g, '}')
+          .replace(/,\s*]/g, ']')
+          .replace(/(['"])?([a-zA-Z0-9_]+)(['"])?\s*:/g, '"$2":')
+          .replace(/'/g, '"');
+        return JSON.parse(fixed);
+      }
+    }
+
+    function triggerImport() {
+      document.getElementById('import-json').click();
+    }
+
+    function copyJson() {
+      const code = document.getElementById('json-preview').textContent;
+      navigator.clipboard.writeText(code)
+        .then(() => alert('JSON copiado com sucesso!'))
+        .catch(() => alert('Falha ao copiar JSON.'));
+    }
+
+    function downloadJson() {
+      const code = document.getElementById('json-preview').textContent;
+      const blob = new Blob([code], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'skills.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    document.getElementById('import-json').addEventListener('change', function () {
+      const file = this.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        try {
+          const content = tryRepairJSON(e.target.result);
+          if (!Array.isArray(content)) throw new Error("JSON não é um array.");
+
+          const sorted = content.sort((a, b) => (a.level ?? 0) - (b.level ?? 0));
+          const container = document.getElementById('skills-container');
+          container.innerHTML = '';
+          skills.length = 0;
+
+          sorted.forEach(skillData => {
+            const skill = createSkill(skillData);
+            skills.push(skill);
+            container.appendChild(skill);
+          });
+
+          updateJson();
+        } catch (err) {
+          alert("Erro ao importar JSON: " + err.message);
+        }
+      };
+      reader.readAsText(file);
+    });
+
+    document.getElementById('theme-icon').textContent =
+      document.body.getAttribute('data-theme') === 'light' ? '🌙' : '☀️';
   </script>
 </body>
 </html>
