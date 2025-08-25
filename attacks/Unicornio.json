@@ -1,0 +1,139 @@
+[
+  {
+    "name": "Passos Silenciosos",
+    "damage": [16, 19],
+    "effect": {
+      "name": "Passos Silenciosos",
+      "turns": 4,
+      "type": 4,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está andando em silêncio! (%d%)",
+      "range": [25, 30]
+    },
+    "level": 1
+  },
+  {
+    "name": "Véu Onírico",
+    "damage": [18, 20],
+    "level": 2
+  },
+  {
+    "name": "Toque do Devaneio",
+    "damage": [16, 21],
+    "effect": {
+      "name": "Devaneios",
+      "turns": 2,
+      "type": 1,
+      "chances": 0.5,
+      "self": false,
+      "phrase": "%s está devaneando! (%d)",
+      "range": [5, 10]
+    },
+    "level": 3
+  },
+  {
+    "name": "Escudo dos Sonhos",
+    "damage": [17, 23],
+    "effect": [3, 1],
+    "level": 4
+  },
+  {
+    "name": "Bruma Noturna",
+    "damage": [10, 16],
+    "effect": {
+      "name": "Bruma Noturna",
+      "turns": 1,
+      "type": 2,
+      "chances": 0.75,
+      "self": true,
+      "phrase": "%s está sendo lavado pelas águas da bruma noturna! (+%d)",
+      "range": [5, 15]
+    },
+    "level": 5
+  },
+  {
+    "name": "Caminho dos Sonhos",
+    "damage": [18, 28],
+    "level": 7
+  },
+  {
+    "name": "Garras da Escuridão",
+    "damage": [20, 30],
+    "level": 12
+  },
+  {
+    "name": "Manipulação do Sono",
+    "damage": [25, 30],
+    "effect": [1, 0.75],
+    "level": 14
+  },
+  {
+    "name": "Ecos da Mente Adormecida",
+    "damage": [31, 43],
+    "level": 16
+  },
+  {
+    "name": "Sombra Crescente",
+    "damage": [30, 47],
+    "level": 18
+  },
+  {
+    "name": "Vulto Estelar",
+    "damage": [18, 29],
+    "effect": [2, 0.5],
+    "level": 20
+  },
+  {
+    "name": "Chuva de Cristais Lunares",
+    "damage": [30, 35],
+    "level": 22
+  },
+  {
+    "name": "Marca do Tigre Lunar",
+    "damage": [45, 50],
+    "effect": {
+      "name": "Marca do Tigre Lunar",
+      "turns": 3,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sob os efeitos da Marca! (%d%)",
+      "range": [33, 33]
+    },
+    "level": 24
+  },
+  {
+    "name": "Luz da Meia-Noite",
+    "damage": [51, 65],
+    "level": 26
+  },
+  {
+    "name": "Pesadelo",
+    "damage": [45, 45],
+    "effect": {
+      "name": "Pesadelo",
+      "turns": 3,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sofrendo com pesadelos! (-%d)",
+      "range": [35, 45]
+    },
+    "level": 28
+  },
+  {
+    "name": "Ascenção Lunar",
+    "damage": [60, 65],
+    "effect": {
+      "name": "Erguer da Lua",
+      "turns": 2,
+      "type": 2,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está erguendo a lua! (+%d)",
+      "range": [25, 30]
+    },
+    "level": 30
+  }
+]

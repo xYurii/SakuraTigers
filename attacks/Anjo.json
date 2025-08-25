@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Garras Divinas",
+    "damage": [16, 19],
+    "level": 1
+  },
+  {
+    "name": "Rugido Celestial",
+    "damage": [17, 21],
+    "level": 2
+  },
+  {
+    "name": "Aura Protetora",
+    "damage": [15, 17],
+    "effect": [3, 1],
+    "level": 4
+  },
+  {
+    "name": "Investida Do Arcanjo",
+    "damage": [20, 25],
+    "level": 5
+  },
+  {
+    "name": "Luz Purificadora",
+    "damage": [21, 29],
+    "level": 7
+  },
+  {
+    "name": "Fogo Celeste",
+    "damage": [22, 25],
+    "effect": {
+      "name": "Chamas",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está pegando fogo! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 9
+  },
+  {
+    "name": "Pulo Gracioso",
+    "damage": [33, 41],
+    "level": 10
+  },
+  {
+    "name": "Asa da Redenção",
+    "damage": [34, 46],
+    "level": 12
+  },
+  {
+    "name": "Salvação",
+    "damage": [33, 44],
+    "effect": {
+      "name": "Salvação",
+      "turns": 2,
+      "type": 2,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s  (%d)",
+      "range": [15, 20]
+    },
+    "level": 13
+  },
+  {
+    "name": "Olhar Justiceiro",
+    "damage": [25, 30],
+    "effect": [2, 0.65],
+    "level": 15
+  },
+  {
+    "name": "Impacto Celestial",
+    "damage": [47, 57],
+    "level": 19
+  },
+  {
+    "name": "Corrente Sagrada",
+    "damage": [55, 68],
+    "level": 20
+  },
+  {
+    "name": "Portões do Céu",
+    "damage": [40, 40],
+    "effect": [7, 1],
+    "level": 21
+  },
+  {
+    "name": "Purificação de Almas",
+    "damage": [50, 50],
+    "effect": {
+      "name": "Purificação",
+      "turns": 3,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo purificado pelo fogo divino! (-%d)",
+      "range": [10, 10]
+    },
+    "level": 23
+  },
+  {
+    "name": "Julgamento",
+    "damage": [64, 71],
+    "level": 25
+  },
+  {
+    "name": "Sopro Da Vida",
+    "damage": [55, 60],
+    "effect": [7, 1],
+    "level": 27
+  },
+  {
+    "name": "Apocalipse",
+    "damage": [75, 85],
+    "level": 30
+  }
+]

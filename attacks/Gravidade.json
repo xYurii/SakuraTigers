@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Rugido Gravitacional",
+    "damage": [15, 23],
+    "effect": [3, 1],
+    "level": 1
+  },
+  {
+    "name": "Garras da Singularidade",
+    "damage": [22, 26],
+    "level": 2
+  },
+  {
+    "name": "Investida Orbital",
+    "damage": [25, 30],
+    "level": 3
+  },
+  {
+    "name": "Ondas da Distorção",
+    "damage": [18, 27],
+    "effect": [3, 1],
+    "level": 5
+  },
+  {
+    "name": "Aura de Compressão",
+    "damage": [14, 20],
+    "effect": [2, 0.75],
+    "level": 7
+  },
+  {
+    "name": "Golpe do Buraco Negro",
+    "damage": [19, 27],
+    "level": 9
+  },
+  {
+    "name": "Garras da Pressão Extrema",
+    "damage": [20, 28],
+    "effect": [3, 1],
+    "level": 11
+  },
+  {
+    "name": "Mordida Dimensional",
+    "damage": [23, 32],
+    "level": 12
+  },
+  {
+    "name": "Escudo de Gravidade",
+    "damage": [18, 24],
+    "effect": [3, 1],
+    "level": 14
+  },
+  {
+    "name": "Ponto de Colapso",
+    "damage": [25, 35],
+    "effect": [2, 1],
+    "level": 16
+  },
+  {
+    "name": "Corrente de Força Gravitacional",
+    "damage": [29, 40],
+    "level": 18
+  },
+  {
+    "name": "Tormenta de Gravidade",
+    "damage": [31, 43],
+    "effect": [3, 1],
+    "level": 19
+  },
+  {
+    "name": "Fúria da Singularidade",
+    "damage": [33, 46],
+    "level": 21
+  },
+  {
+    "name": "Rajada de Raios Solares",
+    "damage": [37, 50],
+    "effect": {
+      "name": "Radiação Ionizante",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo irradiado! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 22
+  },
+  {
+    "name": "Sopro da Nebulosa",
+    "damage": [45, 59],
+    "level": 24
+  },
+  {
+    "name": "Estrela de Nêutrons",
+    "damage": [39, 56],
+    "effect": [3, 1],
+    "level": 27
+  },
+  {
+    "name": "Gravidade Negativa",
+    "damage": [60, 75],
+    "effect": {
+      "name": "Interferência Gravitacional",
+      "turns": 3,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sob ação da força gravitacional! (-%d%)",
+      "range": [50, 50]
+    },
+    "level": 30
+  }
+]

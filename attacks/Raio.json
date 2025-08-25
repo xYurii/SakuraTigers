@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Garras do Trovão",
+    "damage": [11, 15],
+    "effect": [2, 0.33],
+    "level": 1
+  },
+  {
+    "name": "Investida Relâmpago",
+    "damage": [15, 19],
+    "effect": [13, 1],
+    "level": 2
+  },
+  {
+    "name": "Mordida Eletrificada",
+    "damage": [18, 20],
+    "effect": [13, 0.75],
+    "level": 3
+  },
+  {
+    "name": "Rugido Trovejante",
+    "damage": [10, 16],
+    "effect": [3, 0.75],
+    "level": 4
+  },
+  {
+    "name": "Garras Sobrecarregadas",
+    "damage": [18, 23],
+    "effect": [13, 1],
+    "level": 5
+  },
+  {
+    "name": "Sopro de Plasma",
+    "damage": [21, 26],
+    "level": 9
+  },
+  {
+    "name": "Chicote de Raio",
+    "damage": [19, 26],
+    "effect": [13, 1],
+    "level": 10
+  },
+  {
+    "name": "Fúria do Relâmpago",
+    "damage": [20, 26],
+    "effect": [13, 0.85],
+    "level": 12
+  },
+  {
+    "name": "Lambida Eletrostática",
+    "damage": [15, 18],
+    "effect": [1, 0.65],
+    "level": 13
+  },
+  {
+    "name": "Rugido de Alta Voltagem",
+    "damage": [24, 32],
+    "effect": [3, 0.9],
+    "level": 15
+  },
+  {
+    "name": "Rasteira Supersônica",
+    "damage": [24, 35],
+    "effect": [2, 0.75],
+    "level": 17
+  },
+  {
+    "name": "Patada Impactante",
+    "damage": [26, 37],
+    "effect": [3, 0.85],
+    "level": 19
+  },
+  {
+    "name": "Rugido Energizante",
+    "damage": [25, 36],
+    "effect": [1, 0.85],
+    "level": 21
+  },
+  {
+    "name": "Rasgo Voltaico",
+    "damage": [35, 45],
+    "effect": [13, 1],
+    "level": 23
+  },
+  {
+    "name": "Emboscada Estática",
+    "damage": [34, 44],
+    "effect": [2, 0.75],
+    "level": 25
+  },
+  {
+    "name": "Garras Plasmáticas",
+    "damage": [40, 55],
+    "effect": [13, 1],
+    "level": 27
+  },
+  {
+    "name": "Relâmpago Ascendente",
+    "damage": [58, 72],
+    "effect": [1, 1],
+    "level": 30
+  }
+]

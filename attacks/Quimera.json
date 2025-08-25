@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Rugido Monstruoso",
+    "damage": [19, 25],
+    "level": 1
+  },
+  {
+    "name": "Garras Dracônicas",
+    "damage": [20, 26],
+    "level": 2
+  },
+  {
+    "name": "Mordida Caudal",
+    "damage": [21, 27],
+    "level": 3
+  },
+  {
+    "name": "Investida Serpentina",
+    "damage": [24, 29],
+    "level": 5
+  },
+  {
+    "name": "Golpe das Três Feras",
+    "damage": [25, 31],
+    "level": 7
+  },
+  {
+    "name": "Aura Mutável",
+    "damage": [24, 29],
+    "effect": [9, 1],
+    "level": 8
+  },
+  {
+    "name": "Explosão Elemental",
+    "damage": [28, 32],
+    "level": 10
+  },
+  {
+    "name": "Mordida Venenosa",
+    "damage": [24, 28],
+    "effect": {
+      "name": "Veneno",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo envenenado! (-%d)",
+      "range": [15, 25]
+    },
+    "level": 12
+  },
+  {
+    "name": "Escudo de Escamas",
+    "damage": [29, 32],
+    "effect": [3, 1],
+    "level": 13
+  },
+  {
+    "name": "Impacto Bestial",
+    "damage": [36, 42],
+    "level": 15
+  },
+  {
+    "name": "Tormenta Selvagem",
+    "damage": [37, 45],
+    "level": 17
+  },
+  {
+    "name": "Corrente Quimérica",
+    "damage": [39, 47],
+    "level": 19
+  },
+  {
+    "name": "Garras do Destino",
+    "damage": [49, 53],
+    "level": 20
+  },
+  {
+    "name": "Olhar da Medusa",
+    "damage": [54, 64],
+    "effect": {
+      "name": "Petrificação",
+      "turns": 1,
+      "type": 3,
+      "chances": 0.75,
+      "self": false,
+      "phrase": "%s está sendo transformado em pedra! (%d)",
+      "range": [0, 0]
+    },
+    "level": 22
+  },
+  {
+    "name": "Força Mitológica",
+    "damage": [71, 75],
+    "effect": {
+      "name": "Força Herculeana",
+      "turns": 3,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo oprimido pela força de Hércules! (-%d%)",
+      "range": [60, 65]
+    },
+    "level": 24
+  },
+  {
+    "name": "Explosão de Poder Ancestral",
+    "damage": [65, 85],
+    "level": 25
+  },
+  {
+    "name": "Sopro Caótico",
+    "damage": [70, 100],
+    "level": 27
+  },
+  {
+    "name": "Lança de Belerofonte",
+    "damage": [60, 60],
+    "effect": [14, 1],
+    "level": 30
+  }
+]

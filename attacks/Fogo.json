@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Garra Ardente",
+    "damage": [10, 22],
+    "level": 1
+  },
+  {
+    "name": "Rajada Flamejante",
+    "damage": [12, 20],
+    "level": 2
+  },
+  {
+    "name": "Presas Infernais",
+    "damage": [14, 14],
+    "effect": {
+      "name": "Chamas",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está pegando fogo! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 3
+  },
+  {
+    "name": "Manto Incandescente",
+    "damage": [8, 12],
+    "effect": [6, 0.75],
+    "level": 4
+  },
+  {
+    "name": "Pulso Flamejante",
+    "damage": [22, 26],
+    "level": 5
+  },
+  {
+    "name": "Explosão Ardente",
+    "damage": [24, 30],
+    "level": 7
+  },
+  {
+    "name": "Impacto Febril",
+    "damage": [15, 20],
+    "effect": [2, 0.5],
+    "level": 12
+  },
+  {
+    "name": "Chamas Cortantes",
+    "damage": [28, 33],
+    "level": 14
+  },
+  {
+    "name": "Fogo Sanguinário",
+    "damage": [22, 25],
+    "effect": {
+      "name": "Chamas",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está pegando fogo! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 16
+  },
+  {
+    "name": "Coração Flamejante",
+    "damage": [15, 15],
+    "effect": [1, 0.75],
+    "level": 18
+  },
+  {
+    "name": "Explosão do Sol",
+    "damage": [35, 40],
+    "level": 20
+  },
+  {
+    "name": "Garras de Magma",
+    "damage": [38, 45],
+    "level": 22
+  },
+  {
+    "name": "Aura Ígnea",
+    "damage": [35, 40],
+    "effect": [6, 1],
+    "level": 24
+  },
+  {
+    "name": "Olhar Cegante",
+    "damage": [30, 35],
+    "effect": [2, 0.5],
+    "level": 26
+  },
+  {
+    "name": "Chamas Finalizantes",
+    "damage": [40, 40],
+    "effect": {
+      "name": "Chamas",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está pegando fogo! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 27
+  },
+  {
+    "name": "Alma de Fênix",
+    "damage": [25, 25],
+    "effect": [1, 1],
+    "level": 29
+  },
+  {
+    "name": "Sol Incandescente",
+    "damage": [50, 55],
+    "level": 30
+  }
+]

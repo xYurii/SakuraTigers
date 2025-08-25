@@ -1,0 +1,111 @@
+[
+  {
+    "name": "Bafo de Dragão",
+    "damage": [22, 22],
+    "level": 1
+  },
+  {
+    "name": "Presas de Magma",
+    "damage": [18, 22],
+    "effect": {
+      "name": "Chamas",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está pegando fogo! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 2
+  },
+  {
+    "name": "Garras Vulcânicas",
+    "damage": [20, 24],
+    "level": 4
+  },
+  {
+    "name": "Escudo Ardente",
+    "damage": [18, 22],
+    "effect": [6, 1],
+    "level": 5
+  },
+  {
+    "name": "Salto Ígneo",
+    "damage": [22, 26],
+    "effect": [2, 0.75],
+    "level": 7
+  },
+  {
+    "name": "Fúria Solar",
+    "damage": [27, 29],
+    "level": 9
+  },
+  {
+    "name": "Redemoinho Incandescente",
+    "damage": [28, 31],
+    "level": 11
+  },
+  {
+    "name": "Brasa Selvagem",
+    "damage": [25, 27],
+    "effect": {
+      "name": "Armadura Ardente",
+      "turns": 3,
+      "type": 6,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s se cobriu de fogo! (%d)",
+      "range": [50, 50]
+    },
+    "level": 13
+  },
+  {
+    "name": "Aura de Orgulho",
+    "damage": [28, 28],
+    "effect": [8, 1],
+    "level": 15
+  },
+  {
+    "name": "Explosão Crepuscular",
+    "damage": [32, 38],
+    "level": 17
+  },
+  {
+    "name": "Tempestade Ardente",
+    "damage": [36, 45],
+    "level": 19
+  },
+  {
+    "name": "Chamas do Eclipse",
+    "damage": [45, 55],
+    "level": 20
+  },
+  {
+    "name": "Ganância de Dragão",
+    "damage": [45, 50],
+    "effect": [7, 1],
+    "level": 22
+  },
+  {
+    "name": "Impacto Meteórico",
+    "damage": [72, 78],
+    "level": 23
+  },
+  {
+    "name": "Magia Dracônica",
+    "damage": [66, 77],
+    "effect": [1, 1],
+    "level": 25
+  },
+  {
+    "name": "Rugido Ancestral",
+    "damage": [75, 85],
+    "level": 27
+  },
+  {
+    "name": "Sopro de Cinzas",
+    "damage": [60, 66],
+    "effect": [10, 1],
+    "level": 30
+  }
+]

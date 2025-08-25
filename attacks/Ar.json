@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Garra Cortante",
+    "damage": [12, 18],
+    "level": 1
+  },
+  {
+    "name": "Ciclone Rasteiro",
+    "damage": [13, 19],
+    "level": 2
+  },
+  {
+    "name": "Sopro Estonteante",
+    "damage": [14, 21],
+    "effect": [2, 0.35],
+    "level": 3
+  },
+  {
+    "name": "Escudo de Vento",
+    "damage": [7, 11],
+    "effect": [3, 0.75],
+    "level": 4
+  },
+  {
+    "name": "Rasante Cortavento",
+    "damage": [20, 27],
+    "level": 5
+  },
+  {
+    "name": "Sussurro Ágil",
+    "damage": [23, 31],
+    "level": 7
+  },
+  {
+    "name": "Vórtice Sonoro",
+    "damage": [24, 33],
+    "effect": [0, 1],
+    "level": 12
+  },
+  {
+    "name": "Lâmina Aérea",
+    "damage": [26, 36],
+    "level": 14
+  },
+  {
+    "name": "Golpe Invisível",
+    "damage": [31, 40],
+    "effect": [4, 1],
+    "level": 16
+  },
+  {
+    "name": "Corrente Ascendente",
+    "damage": [14, 18],
+    "effect": [1, 1],
+    "level": 18
+  },
+  {
+    "name": "Vendaval Preciso",
+    "damage": [30, 45],
+    "level": 20
+  },
+  {
+    "name": "Sopro Estático",
+    "damage": [32, 47],
+    "effect": [2, 0.5],
+    "level": 22
+  },
+  {
+    "name": "Lâminas Giratórias",
+    "damage": [35, 48],
+    "level": 24
+  },
+  {
+    "name": "Grito Tempestuoso",
+    "damage": [38, 47],
+    "effect": [0, 1],
+    "level": 26
+  },
+  {
+    "name": "Asa Protetora",
+    "damage": [30, 40],
+    "effect": [9, 1],
+    "level": 28
+  },
+  {
+    "name": "Golpe do Furacão",
+    "damage": [30, 43],
+    "effect": [4, 1],
+    "level": 29
+  },
+  {
+    "name": "Lâmina Celeste",
+    "damage": [45, 50],
+    "effect": [2, 0.3],
+    "level": 30
+  }
+]

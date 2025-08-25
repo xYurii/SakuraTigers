@@ -1,0 +1,144 @@
+[
+  {
+    "name": "Garra Descontrolada",
+    "damage": [25, 35],
+    "level": 1
+  },
+  {
+    "name": "Investida Selvagem",
+    "damage": [28, 40],
+    "level": 2
+  },
+  {
+    "name": "Rugido Amedrontador",
+    "damage": [25, 38],
+    "effect": [2, 0.85],
+    "level": 3
+  },
+  {
+    "name": "Dilacerar",
+    "damage": [35, 50],
+    "level": 4
+  },
+  {
+    "name": "Contra-Golpe",
+    "damage": [38, 55],
+    "effect": {
+      "name": "Defesa Implacável",
+      "turns": 2,
+      "type": 4,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está se defendendo com maestria! (%d%)",
+      "range": [85, 85]
+    },
+    "level": 5
+  },
+  {
+    "name": "Explosão de Fúria",
+    "damage": [45, 60],
+    "level": 7
+  },
+  {
+    "name": "Golpe Devastador",
+    "damage": [60, 65],
+    "level": 9
+  },
+  {
+    "name": "Ataque Alucinado",
+    "damage": [60, 70],
+    "level": 11
+  },
+  {
+    "name": "Fenda Brutal",
+    "damage": [55, 80],
+    "level": 13
+  },
+  {
+    "name": "Aura de Caos",
+    "damage": [50, 65],
+    "effect": {
+      "name": "Exaustão Berserker",
+      "turns": 3,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo exaurido pela aura do inimigo! (%d%)",
+      "range": [70, 70]
+    },
+    "level": 15
+  },
+  {
+    "name": "Ataque Frenético",
+    "damage": [60, 85],
+    "level": 17
+  },
+  {
+    "name": "Fúria Implacável",
+    "damage": [65, 90],
+    "level": 19
+  },
+  {
+    "name": "Golpe da Loucura",
+    "damage": [70, 95],
+    "level": 21
+  },
+  {
+    "name": "Tornado de Presas",
+    "damage": [75, 110],
+    "level": 23
+  },
+  {
+    "name": "Raiva Reativa",
+    "damage": [55, 65],
+    "effect": {
+      "name": "Contra Ataque",
+      "turns": 3,
+      "type": 6,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está contra atacando! (%d%)",
+      "range": [75, 75]
+    },
+    "level": 25
+  },
+  {
+    "name": "Brado Desestabilizador",
+    "damage": [70, 85],
+    "effect": [2, 1],
+    "level": 26
+  },
+  {
+    "name": "Destruição Pura",
+    "damage": [95, 130],
+    "level": 28
+  },
+  {
+    "name": "Devastação",
+    "damage": [100, 130],
+    "effect": {
+      "name": "Intimidação Berserk",
+      "turns": 3,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo intimidado! (%d%)",
+      "range": [100, 100]
+    },
+    "level": 30
+  },
+  {
+    "name": "Theocídio",
+    "damage": [200, 200],
+    "effect": {
+      "name": "Aniquilação dos Deuses",
+      "turns": 3,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo punido por poderes profanos! (%d%)",
+      "range": [135, 135]
+    },
+    "level": 35
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Mordida Sombria",
+    "damage": [18, 24],
+    "level": 1
+  },
+  {
+    "name": "Rugido Infernal",
+    "damage": [15, 18],
+    "effect": [2, 0.5],
+    "level": 3
+  },
+  {
+    "name": "Brasas do Inferno",
+    "damage": [16, 19],
+    "effect": {
+      "name": "Chamas Infernais",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo queimado pelo fogo do inferno! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 4
+  },
+  {
+    "name": "Possessão",
+    "damage": [19, 21],
+    "effect": {
+      "name": "Possessão",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo possuído! (-%d)",
+      "range": [13, 13]
+    },
+    "level": 5
+  },
+  {
+    "name": "Alma Ensandecida",
+    "damage": [23, 28],
+    "level": 7
+  },
+  {
+    "name": "Olhos Escarlates",
+    "damage": [27, 34],
+    "level": 9
+  },
+  {
+    "name": "Purgatório",
+    "damage": [33, 35],
+    "level": 10
+  },
+  {
+    "name": "Garra Sombria",
+    "damage": [35, 38],
+    "level": 12
+  },
+  {
+    "name": "Asas do Terror",
+    "damage": [38, 43],
+    "level": 13
+  },
+  {
+    "name": "Explosão Maldita",
+    "damage": [30, 42],
+    "effect": [2, 0.6],
+    "level": 15
+  },
+  {
+    "name": "Corrente das Trevas",
+    "damage": [39, 46],
+    "level": 17
+  },
+  {
+    "name": "Investida Raivosa",
+    "damage": [46, 54],
+    "level": 20
+  },
+  {
+    "name": "Marca do Demônio",
+    "damage": [44, 50],
+    "effect": {
+      "name": "Maldição Infernal",
+      "turns": 2,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo punido pelas correntes do inferno! (-%d%)",
+      "range": [75, 75]
+    },
+    "level": 22
+  },
+  {
+    "name": "Olhar Vazio",
+    "damage": [55, 65],
+    "effect": [2, 0.7],
+    "level": 23
+  },
+  {
+    "name": "Velocidade Sombria",
+    "damage": [65, 70],
+    "level": 25
+  },
+  {
+    "name": "Maldição dos Condenados",
+    "damage": [45, 55],
+    "effect": {
+      "name": "Tártaro",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo lançado às profundezas do Tártaro! (-%d)",
+      "range": [35, 45]
+    },
+    "level": 27
+  },
+  {
+    "name": "Desgraça Sobre a Terra",
+    "damage": [95, 105],
+    "level": 30
+  }
+]

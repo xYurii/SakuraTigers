@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Garras de Lava",
+    "damage": [16, 21],
+    "effect": {
+      "name": "Chamas",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está pegando fogo! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 1
+  },
+  {
+    "name": "Investida Magmática",
+    "damage": [17, 23],
+    "level": 2
+  },
+  {
+    "name": "Mordida Ígnea",
+    "damage": [20, 25],
+    "level": 3
+  },
+  {
+    "name": "Rugido Vulcânico",
+    "damage": [23, 28],
+    "level": 4
+  },
+  {
+    "name": "Explosão de Magma",
+    "damage": [25, 25],
+    "effect": {
+      "name": "Chamas",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está pegando fogo! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 6
+  },
+  {
+    "name": "Sopro de Fogo Líquido",
+    "damage": [20, 27],
+    "effect": {
+      "name": "Chamas Ardentes",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sob chamas ardentes! (-%d)",
+      "range": [10, 15]
+    },
+    "level": 9
+  },
+  {
+    "name": "Chicote de Rocha Derretida",
+    "damage": [25, 32],
+    "level": 10
+  },
+  {
+    "name": "Fúria do Vulcão",
+    "damage": [23, 35],
+    "level": 12
+  },
+  {
+    "name": "Forte das Cinzas Ardentes",
+    "damage": [25, 38],
+    "effect": [3, 1],
+    "level": 15
+  },
+  {
+    "name": "Rasteira Vulcânica",
+    "damage": [28, 40],
+    "effect": [2, 0.5],
+    "level": 17
+  },
+  {
+    "name": "Patada Infernal",
+    "damage": [33, 45],
+    "effect": {
+      "name": "Chamas",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está pegando fogo! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 19
+  },
+  {
+    "name": "Rajada Magmática",
+    "damage": [35, 48],
+    "level": 21
+  },
+  {
+    "name": "Rasgo Vulcânico",
+    "damage": [40, 50],
+    "effect": {
+      "name": "Magma",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo encoberto pelo magma! (-%d)",
+      "range": [15, 20]
+    },
+    "level": 23
+  },
+  {
+    "name": "Emboscada Ardente",
+    "damage": [40, 55],
+    "effect": [10, 0.6],
+    "level": 25
+  },
+  {
+    "name": "Garras Infernais",
+    "damage": [45, 55],
+    "level": 27
+  },
+  {
+    "name": "Mega Erupção",
+    "damage": [65, 75],
+    "effect": [10, 1],
+    "level": 30
+  }
+]

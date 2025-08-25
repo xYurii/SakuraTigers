@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Galho",
+    "damage": [16, 16],
+    "level": 1
+  },
+  {
+    "name": "Graveto",
+    "damage": [15, 18],
+    "level": 2
+  },
+  {
+    "name": "Lasca de Madeira",
+    "damage": [16, 21],
+    "level": 3
+  },
+  {
+    "name": "Farpa Cortante",
+    "damage": [17, 23],
+    "level": 4
+  },
+  {
+    "name": "Raíz",
+    "damage": [10, 14],
+    "effect": [1, 1],
+    "level": 5
+  },
+  {
+    "name": "Árvore",
+    "damage": [18, 28],
+    "level": 7
+  },
+  {
+    "name": "Tronco",
+    "damage": [20, 30],
+    "level": 12
+  },
+  {
+    "name": "Tábua",
+    "damage": [28, 38],
+    "level": 14
+  },
+  {
+    "name": "Cepo",
+    "damage": [31, 38],
+    "level": 16
+  },
+  {
+    "name": "Toco",
+    "damage": [30, 40],
+    "level": 18
+  },
+  {
+    "name": "Escudo de Carvalho",
+    "damage": [18, 26],
+    "effect": {
+      "name": "Escudo de Carvalho",
+      "turns": 4,
+      "type": 4,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está se defendendo com o escudo de carvalho! (%d)",
+      "range": [1, 150]
+    },
+    "level": 20
+  },
+  {
+    "name": "Enxerto",
+    "damage": [30, 35],
+    "effect": [1, 1],
+    "level": 22
+  },
+  {
+    "name": "Tora",
+    "damage": [40, 50],
+    "level": 24
+  },
+  {
+    "name": "Madeirada",
+    "damage": [45, 55],
+    "level": 26
+  },
+  {
+    "name": "Paulada",
+    "damage": [50, 60],
+    "level": 28
+  },
+  {
+    "name": "Tronco Colossal",
+    "damage": [55, 65],
+    "effect": {
+      "name": "Enraizamento",
+      "turns": 6,
+      "type": 2,
+      "chances": 0.75,
+      "self": true,
+      "phrase": "%s está enraizando seu tronco! (+%d)",
+      "range": [5, 5]
+    },
+    "level": 30
+  }
+]

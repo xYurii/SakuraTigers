@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Lâmina das Sombras",
+    "damage": [17, 25],
+    "level": 1
+  },
+  {
+    "name": "Mordida Noturna",
+    "damage": [22, 28],
+    "level": 2
+  },
+  {
+    "name": "Rugido Fantasma",
+    "damage": [25, 33],
+    "level": 4
+  },
+  {
+    "name": "Fenda Abissal",
+    "damage": [20, 29],
+    "level": 5,
+    "effect": {
+      "name": "Fenda Abissal",
+      "range": [5, 10],
+      "phrase": "%s olhou para o abismo e gritou em desespero! (-%d)",
+      "turns": 3,
+      "chances": 1,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Sombras Despedaçadas",
+    "damage": [18, 26],
+    "level": 7
+  },
+  {
+    "name": "Investida sombria",
+    "damage": [26, 34],
+    "level": 9
+  },
+  {
+    "name": "Corte das Trevas",
+    "damage": [28, 36],
+    "level": 10
+  },
+  {
+    "name": "Devorar Luz",
+    "damage": [30, 39],
+    "level": 12
+  },
+  {
+    "name": "Abraço da Morte",
+    "damage": [33, 42],
+    "level": 13
+  },
+  {
+    "name": "Maldição Sombria",
+    "damage": [35, 45],
+    "level": 15
+  },
+  {
+    "name": "Domínio Sombrio",
+    "damage": [30, 35],
+    "level": 19,
+    "effect": {
+      "name": "Domínio Sombrio",
+      "range": [15, 25],
+      "phrase": "%s está absorvendo poder das trevas (-%d)",
+      "turns": 4,
+      "chances": 1,
+      "self": true,
+      "type": 2
+    }
+  },
+  {
+    "name": "Sentença de Morte",
+    "damage": [37, 49],
+    "level": 20
+  },
+  {
+    "name": "Correntes das Sombras",
+    "damage": [33, 40],
+    "level": 21,
+    "effect": {
+      "name": "Corrente das Sombras",
+      "range": [0, 0],
+      "phrase": "%s está sendo amordaçado por seus medos! (%d)",
+      "turns": 1,
+      "chances": 1,
+      "self": false,
+      "type": 3
+    }
+  },
+  {
+    "name": "Predador do Submundo",
+    "damage": [40, 53],
+    "level": 23
+  },
+  {
+    "name": "Eco da Morte",
+    "damage": [44, 58],
+    "level": 25
+  },
+  {
+    "name": "Lança da noite Eterna",
+    "damage": [50, 63],
+    "level": 27
+  },
+  {
+    "name": "Julgamento Final",
+    "damage": [65, 80],
+    "level": 30,
+    "effect": {
+      "name": "Julgamento Final",
+      "range": [65, 65],
+      "phrase": "%s está afundando o inimigo em sua sombra! (%d%)",
+      "turns": 3,
+      "chances": 1,
+      "self": true,
+      "type": 6
+    }
+  }
+]

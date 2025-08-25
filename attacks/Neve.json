@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Rugido Glacial",
+    "damage": [15, 22],
+    "level": 1
+  },
+  {
+    "name": "Garras de Nevasca",
+    "damage": [14, 17],
+    "effect": [2, 0.35],
+    "level": 2
+  },
+  {
+    "name": "Investida Ártica",
+    "damage": [16, 25],
+    "level": 3
+  },
+  {
+    "name": "Explosão de Gelo",
+    "damage": [18, 28],
+    "level": 5
+  },
+  {
+    "name": "Golpe da Geada",
+    "damage": [20, 30],
+    "level": 7
+  },
+  {
+    "name": "Sopro Gélido",
+    "damage": [20, 24],
+    "effect": {
+      "name": "Hipotermia",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está congelando! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 9
+  },
+  {
+    "name": "Mordida de Cristal",
+    "damage": [24, 32],
+    "level": 10
+  },
+  {
+    "name": "Escudo de Neve",
+    "damage": [18, 22],
+    "effect": [3, 1],
+    "level": 12
+  },
+  {
+    "name": "Impacto Invernal",
+    "damage": [25, 35],
+    "level": 13
+  },
+  {
+    "name": "Corrente de Gelo",
+    "damage": [27, 37],
+    "level": 15
+  },
+  {
+    "name": "Fúria do Ártico",
+    "damage": [30, 40],
+    "level": 17
+  },
+  {
+    "name": "Tormenta de Granizo",
+    "damage": [33, 44],
+    "effect": {
+      "name": "Congelamento Interno",
+      "turns": 3,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está se fragmentando! (%d%)",
+      "range": [40, 40]
+    },
+    "level": 19
+  },
+  {
+    "name": "Dádiva Glacial",
+    "damage": [35, 48],
+    "effect": [1, 1],
+    "level": 21
+  },
+  {
+    "name": "Aura Congelante",
+    "damage": [35, 45],
+    "effect": [2, 0.15],
+    "level": 22
+  },
+  {
+    "name": "Geleira",
+    "damage": [42, 44],
+    "effect": [2, 0.55],
+    "level": 24
+  },
+  {
+    "name": "Garras do Permafrost",
+    "damage": [39, 42],
+    "effect": {
+      "name": "Autocongelamento",
+      "turns": 2,
+      "type": 4,
+      "chances": 0.8,
+      "self": true,
+      "phrase": "%s se congelou! (%d%)",
+      "range": [80, 80]
+    },
+    "level": 26
+  },
+  {
+    "name": "Iceberg Colossal",
+    "damage": [52, 54],
+    "effect": [2, 1],
+    "level": 30
+  }
+]

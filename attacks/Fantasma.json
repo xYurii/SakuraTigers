@@ -1,0 +1,240 @@
+[
+  {
+    "name": "Arranhão Fantasma",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Arranhão Fantasma",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo arranhado por garras fantasmagóricas! (-%d)",
+      "range": [12, 12]
+    },
+    "level": 1
+  },
+  {
+    "name": "Investida Fantasma",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Investida Fantasma",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo atacado por fantasmas! (-%d)",
+      "range": [14, 20]
+    },
+    "level": 2
+  },
+  {
+    "name": "Mordida Fantasmagórica",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Mordida Fantasmagórica",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo mordido no plano espiritual! (-%d)",
+      "range": [18, 20]
+    },
+    "level": 3
+  },
+  {
+    "name": "Uivo Assustador",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Uivo Assustador",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo assustado! (-%d)",
+      "range": [12, 18]
+    },
+    "level": 4
+  },
+  {
+    "name": "Veneno Espiritual",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Veneno Espiritual",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está tendo sua alma envenenada! (-%d)",
+      "range": [14, 20]
+    },
+    "level": 5
+  },
+  {
+    "name": "Selva Espectral",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Selva Espectral",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sob o efeito de tormentas do espírito! (-%d)",
+      "range": [18, 18]
+    },
+    "level": 9
+  },
+  {
+    "name": "Chicote Ectoplasmático",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Chicote Ectoplasmático",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sofrendo feridas espirituais! (-%d)",
+      "range": [24, 28]
+    },
+    "level": 10
+  },
+  {
+    "name": "Fúria Fantasmagórica",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Fúria Fantasmagórica",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo assolado pela fúria dos mortos! (-%d)",
+      "range": [30, 35]
+    },
+    "level": 12
+  },
+  {
+    "name": "Dádiva Espectral",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Dádiva Espectral",
+      "turns": 2,
+      "type": 2,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está sendo abençoado pelos espíritos! (+%d)",
+      "range": [15, 20]
+    },
+    "level": 13
+  },
+  {
+    "name": "Grito Assombroso",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Grito Assombroso",
+      "turns": 1,
+      "type": 3,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está atordoado! (%d)",
+      "range": [0, 0]
+    },
+    "level": 15
+  },
+  {
+    "name": "Mordida Fantasmagórica",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Mordida Fantasmagórica",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s foi mordido por fantasmas! (-%d)",
+      "range": [26, 38]
+    },
+    "level": 17
+  },
+  {
+    "name": "Patada Implacável",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Patada Implacável",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sob ataque etereal! (-%d)",
+      "range": [30, 40]
+    },
+    "level": 19
+  },
+  {
+    "name": "Espírito Protetor",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Proteção Espiritual",
+      "turns": 2,
+      "type": 4,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está sob a proteção dos espíritos! (+%d)",
+      "range": [100, 100]
+    },
+    "level": 21
+  },
+  {
+    "name": "Rasgo Espectral",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Rasgo Espectral",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sofrendo dano em sua alma! (-%d)",
+      "range": [35, 45]
+    },
+    "level": 23
+  },
+  {
+    "name": "Emboscada Espiritual",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Emboscada Espiritual",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo emboscado por espíritos malignos! (-%d)",
+      "range": [45, 55]
+    },
+    "level": 25
+  },
+  {
+    "name": "Garra Etereal",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Ataque Ectoplasmático",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo encoberto por ectoplasma! (-%d)",
+      "range": [35, 35]
+    },
+    "level": 27
+  },
+  {
+    "name": "Poltergeist",
+    "damage": [1, 1],
+    "effect": {
+      "name": "Poltergeist",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo assombrado por um Poltergeist! (-%d)",
+      "range": [45, 60]
+    },
+    "level": 30
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Míssil Mágico",
+    "damage": [22, 26],
+    "level": 1
+  },
+  {
+    "name": "Garras Encantadas",
+    "damage": [20, 32],
+    "level": 2
+  },
+  {
+    "name": "Salto Dimensional",
+    "damage": [22, 28],
+    "effect": [8, 1],
+    "level": 3
+  },
+  {
+    "name": "Aura Elemental",
+    "damage": [26, 26],
+    "effect": [6, 1],
+    "level": 4
+  },
+  {
+    "name": "Lâmina de Mana",
+    "damage": [30, 45],
+    "level": 6
+  },
+  {
+    "name": "Mordida Etérea",
+    "damage": [5, 5],
+    "effect": {
+      "name": "Paranóia",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sob efeito de alucinações! (-%d)",
+      "range": [35, 45]
+    },
+    "level": 8
+  },
+  {
+    "name": "Rajada Ilusória",
+    "damage": [25, 30],
+    "effect": [2, 0.85],
+    "level": 10
+  },
+  {
+    "name": "Espiral Mágica",
+    "damage": [30, 40],
+    "level": 11
+  },
+  {
+    "name": "Tormenta Espectral",
+    "damage": [35, 45],
+    "effect": [3, 1],
+    "level": 13
+  },
+  {
+    "name": "Magia Negra",
+    "damage": [30, 40],
+    "effect": {
+      "name": "Fraqueza Espiritual",
+      "turns": 3,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo fragilizado pelos espectros! (-%d%)",
+      "range": [35, 35]
+    },
+    "level": 15
+  },
+  {
+    "name": "Fúria dos Espíritos",
+    "damage": [35, 37],
+    "effect": {
+      "name": "Sussurro dos Espíritos",
+      "turns": 4,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está ouvindo as palavras dos mortos! (-%d)",
+      "range": [10, 10]
+    },
+    "level": 17
+  },
+  {
+    "name": "Manipulação Elemental",
+    "damage": [45, 55],
+    "effect": {
+      "name": "Tormenta dos Elementos",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo assolado pelos elementos! (-%d)",
+      "range": [15, 15]
+    },
+    "level": 19
+  },
+  {
+    "name": "Espiritualismo Ancestral",
+    "damage": [45, 65],
+    "effect": {
+      "name": "Ataque Espiritual",
+      "turns": 3,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sobre ataque espiritual! (-%d)",
+      "range": [25, 25]
+    },
+    "level": 20
+  },
+  {
+    "name": "Expulsão do Plano Astral",
+    "damage": [35, 46],
+    "effect": [2, 0.9],
+    "level": 21
+  },
+  {
+    "name": "Conjuração Mística",
+    "damage": [50, 75],
+    "level": 22
+  },
+  {
+    "name": "Ascensão Espiritual",
+    "damage": [40, 50],
+    "effect": {
+      "name": "Magia Curativa",
+      "turns": 1,
+      "type": 2,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está sob magia de regeneração! (+%d)",
+      "range": [55, 65]
+    },
+    "level": 25
+  },
+  {
+    "name": "Círculo Arcano",
+    "damage": [15, 15],
+    "effect": {
+      "name": "Círculo Arcano",
+      "turns": 1,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sob os efeitos do círculo arcano! (-%d)",
+      "range": [130, 130]
+    },
+    "level": 30
+  }
+]

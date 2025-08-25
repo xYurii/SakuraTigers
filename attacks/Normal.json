@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Arranhão Selvagem",
+    "damage": [14, 18],
+    "level": 1
+  },
+  {
+    "name": "Investida Felina",
+    "damage": [13, 19],
+    "level": 2
+  },
+  {
+    "name": "Mordida Afiada",
+    "damage": [16, 20],
+    "level": 3
+  },
+  {
+    "name": "Uivo de Intimidação",
+    "damage": [10, 15],
+    "effect": [2, 0.5],
+    "level": 4
+  },
+  {
+    "name": "Garras Envenenadas",
+    "damage": [8, 12],
+    "effect": {
+      "name": "Veneno",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo envenenado! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 5
+  },
+  {
+    "name": "Sopro da Selva",
+    "damage": [11, 14],
+    "effect": [2, 0.5],
+    "level": 9
+  },
+  {
+    "name": "Chicote de Cauda",
+    "damage": [18, 26],
+    "level": 10
+  },
+  {
+    "name": "Fúria do Caçador",
+    "damage": [20, 28],
+    "level": 12
+  },
+  {
+    "name": "Lambida Curativa",
+    "damage": [12, 16],
+    "effect": [1, 0.85],
+    "level": 13
+  },
+  {
+    "name": "Grito Ensurdecedor",
+    "damage": [23, 32],
+    "level": 15
+  },
+  {
+    "name": "Rasteira Felina",
+    "damage": [24, 36],
+    "level": 17
+  },
+  {
+    "name": "Patada Implacável",
+    "damage": [26, 39],
+    "level": 19
+  },
+  {
+    "name": "Rugido Protetor",
+    "damage": [15, 25],
+    "effect": [3, 1],
+    "level": 21
+  },
+  {
+    "name": "Rasgo Profundo",
+    "damage": [30, 45],
+    "level": 23
+  },
+  {
+    "name": "Emboscada Silenciosa",
+    "damage": [35, 45],
+    "effect": [2, 0.8],
+    "level": 25
+  },
+  {
+    "name": "Garra Sagrada",
+    "damage": [40, 55],
+    "level": 27
+  },
+  {
+    "name": "Caçador Apex",
+    "damage": [55, 70],
+    "level": 30
+  }
+]

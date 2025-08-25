@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Golpe de Maça",
+    "damage": [17, 21],
+    "level": 1
+  },
+  {
+    "name": "Despedaçar",
+    "damage": [19, 26],
+    "level": 2
+  },
+  {
+    "name": "Impacto Maciço",
+    "damage": [26, 28],
+    "level": 3
+  },
+  {
+    "name": "Corte Profundo",
+    "damage": [22, 26],
+    "level": 5,
+    "effect": {
+      "name": "Corte Profundo",
+      "range": [10, 15],
+      "phrase": "%s está sangrando (-%d)!",
+      "turns": 3,
+      "chances": 1,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Ira do Gladiador",
+    "damage": [19, 27],
+    "level": 7
+  },
+  {
+    "name": "Estocada em Cruz",
+    "damage": [21, 30],
+    "level": 9
+  },
+  {
+    "name": "Lâmina de Coragem",
+    "damage": [23, 32],
+    "level": 11
+  },
+  {
+    "name": "Bênção dos Deuses",
+    "damage": [18, 25],
+    "level": 12,
+    "effect": {
+      "name": "Bênção dos Deuses",
+      "range": [14, 21],
+      "phrase": "%s está sob bênção dos deuses (+%d)",
+      "turns": 3,
+      "chances": 1,
+      "self": true,
+      "type": 2
+    }
+  },
+  {
+    "name": "Sangue Derramado",
+    "damage": [25, 35],
+    "level": 14
+  },
+  {
+    "name": "Ira Implacável",
+    "damage": [29, 39],
+    "level": 16
+  },
+  {
+    "name": "Espada dos Campeões",
+    "damage": [37, 44],
+    "level": 18
+  },
+  {
+    "name": "Escudo dos 300",
+    "damage": [25, 33],
+    "level": 19,
+    "effect": {
+      "name": "Escudo dos 300",
+      "range": [100, 100],
+      "phrase": "%s está sob proteção de 300 escudos (%d%)",
+      "turns": 2,
+      "chances": 0.5,
+      "self": true,
+      "type": 4
+    }
+  },
+  {
+    "name": "Domínio Supremo",
+    "damage": [39, 47],
+    "level": 21
+  },
+  {
+    "name": "Tridente do Julgamento",
+    "damage": [41, 52],
+    "level": 22
+  },
+  {
+    "name": "Conquista Final",
+    "damage": [44, 59],
+    "level": 27
+  },
+  {
+    "name": "Fim dos Fracos",
+    "damage": [62, 72],
+    "level": 30,
+    "effect": {
+      "name": "Fim dos Fracos",
+      "range": [50, 50],
+      "phrase": "%s Está almadiçoado pelos Deuses! (%d%)",
+      "turns": 3,
+      "chances": 1,
+      "self": false,
+      "type": 5
+    }
+  }
+]

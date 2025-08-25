@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Magia Negra",
+    "damage": [18, 26],
+    "effect": {
+      "name": "Fragilização do Espírito",
+      "turns": 2,
+      "type": 4,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está com seu espírito fragilizado! (%d%)",
+      "range": [-25, -25]
+    },
+    "level": 1
+  },
+  {
+    "name": "Chicote de Sombras",
+    "damage": [20, 28],
+    "level": 2
+  },
+  {
+    "name": "Fogo Pútrido",
+    "damage": [20, 22],
+    "effect": {
+      "name": "Fogo-Fátuo",
+      "turns": 2,
+      "type": 1,
+      "chances": 0.75,
+      "self": false,
+      "phrase": "%s está sendo queimado por chamas pútridas! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 3
+  },
+  {
+    "name": "Toque Apodrecido",
+    "damage": [22, 34],
+    "level": 5
+  },
+  {
+    "name": "Odor Cadavérico",
+    "damage": [26, 36],
+    "effect": {
+      "name": "Náusea",
+      "turns": 3,
+      "type": 4,
+      "chances": 0.75,
+      "self": false,
+      "phrase": "%s está sentindo náusea! (%d%)",
+      "range": [-33, -33]
+    },
+    "level": 6
+  },
+  {
+    "name": "Bafo Apodrecido",
+    "damage": [28, 38],
+    "level": 8
+  },
+  {
+    "name": "Putrefação",
+    "damage": [30, 35],
+    "effect": {
+      "name": "Decomposição",
+      "turns": 1,
+      "type": 1,
+      "chances": 0.5,
+      "self": false,
+      "phrase": "%s está se decompondo! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 10
+  },
+  {
+    "name": "Boneco Voodoo",
+    "damage": [20, 20],
+    "effect": {
+      "name": "Transferência da Dor",
+      "turns": 3,
+      "type": 6,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está transferindo sua dor para o oponente! (%d)",
+      "range": [100, 100]
+    },
+    "level": 12
+  },
+  {
+    "name": "Caixão de Ossos",
+    "damage": [20, 30],
+    "effect": {
+      "name": "Pânico",
+      "turns": 1,
+      "type": 3,
+      "chances": 0.8,
+      "self": false,
+      "phrase": "%s entrou em pânico! (%d)",
+      "range": [0, 0]
+    },
+    "level": 14
+  },
+  {
+    "name": "Tumba Eterna",
+    "damage": [30, 35],
+    "effect": {
+      "name": "Apodrecimento",
+      "turns": 3,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo apodrecido por dentro! (-%d%)",
+      "range": [50, 50]
+    },
+    "level": 16
+  },
+  {
+    "name": "Frio Sepulcral",
+    "damage": [33, 44],
+    "effect": {
+      "name": "Tentações dos Mortos",
+      "turns": 2,
+      "type": 1,
+      "chances": 0.75,
+      "self": false,
+      "phrase": "%s está sendo tentado pelos desejos dos mortos! (-%d)",
+      "range": [5, 10]
+    },
+    "level": 18
+  },
+  {
+    "name": "Mísseis Cranianos",
+    "damage": [55, 55],
+    "effect": [12, 1],
+    "level": 21
+  },
+  {
+    "name": "Degradação",
+    "damage": [35, 40],
+    "effect": {
+      "name": "Degeneração",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sofrendo degeneração! (-%d)",
+      "range": [30, 35]
+    },
+    "level": 22
+  },
+  {
+    "name": "Ressurreição dos Mortos",
+    "damage": [40, 55],
+    "effect": {
+      "name": "Horda de Mortos-Vivos",
+      "turns": 3,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está sendo atacado pelos mortos! (-%d)",
+      "range": [25, 25]
+    },
+    "level": 25
+  },
+  {
+    "name": "Drenagem Vital",
+    "damage": [40, 50],
+    "effect": {
+      "name": "Roubo de Vida",
+      "turns": 2,
+      "type": 2,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está roubando a vitalidade dos inimigos! (+%d)",
+      "range": [40, 50]
+    },
+    "level": 27
+  },
+  {
+    "name": "Sacrifício",
+    "damage": [200, 200],
+    "effect": {
+      "name": "Contrato de Sangue",
+      "turns": 2,
+      "type": 4,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s sacrificou sua força vital em troca de poder! (%d%)",
+      "range": [-100, -100]
+    },
+    "level": 30
+  }
+]
