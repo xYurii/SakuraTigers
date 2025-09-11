@@ -116,7 +116,7 @@
   {
     "name": "Expulsão do Plano Astral",
     "damage": [35, 46],
-    "effect": [2, 0.9],
+    "effect": [2, 0.85],
     "level": 21
   },
   {
@@ -134,7 +134,7 @@
       "chances": 1,
       "self": true,
       "phrase": "%s está sob magia de regeneração! (+%d)",
-      "range": [55, 65]
+      "range": [50, 50]
     },
     "level": 25
   },
@@ -148,7 +148,7 @@
       "chances": 1,
       "self": false,
       "phrase": "%s está sob os efeitos do círculo arcano! (-%d)",
-      "range": [130, 130]
+      "range": [125, 125]
     },
     "level": 30
   }

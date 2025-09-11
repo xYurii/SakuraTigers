@@ -9,7 +9,7 @@
       "chances": 1,
       "self": false,
       "phrase": "%s está sendo arranhado por garras fantasmagóricas! (-%d)",
-      "range": [12, 12]
+      "range": [10, 10]
     },
     "level": 1
   },
@@ -37,7 +37,7 @@
       "chances": 1,
       "self": false,
       "phrase": "%s está sendo mordido no plano espiritual! (-%d)",
-      "range": [18, 20]
+      "range": [17, 20]
     },
     "level": 3
   },
@@ -51,7 +51,7 @@
       "chances": 1,
       "self": false,
       "phrase": "%s está sendo assustado! (-%d)",
-      "range": [12, 18]
+      "range": [12, 15]
     },
     "level": 4
   },
@@ -79,7 +79,7 @@
       "chances": 1,
       "self": false,
       "phrase": "%s está sob o efeito de tormentas do espírito! (-%d)",
-      "range": [18, 18]
+      "range": [15, 18]
     },
     "level": 9
   },
@@ -93,7 +93,7 @@
       "chances": 1,
       "self": false,
       "phrase": "%s está sofrendo feridas espirituais! (-%d)",
-      "range": [24, 28]
+      "range": [24, 26]
     },
     "level": 10
   },
@@ -121,7 +121,7 @@
       "chances": 1,
       "self": true,
       "phrase": "%s está sendo abençoado pelos espíritos! (+%d)",
-      "range": [15, 20]
+      "range": [10, 15]
     },
     "level": 13
   },
@@ -132,7 +132,7 @@
       "name": "Grito Assombroso",
       "turns": 1,
       "type": 3,
-      "chances": 1,
+      "chances": 0.85,
       "self": false,
       "phrase": "%s está atordoado! (%d)",
       "range": [0, 0]
@@ -177,7 +177,7 @@
       "chances": 1,
       "self": true,
       "phrase": "%s está sob a proteção dos espíritos! (+%d)",
-      "range": [100, 100]
+      "range": [75, 75]
     },
     "level": 21
   },
@@ -228,12 +228,12 @@
     "damage": [1, 1],
     "effect": {
       "name": "Poltergeist",
-      "turns": 2,
+      "turns": 1,
       "type": 1,
       "chances": 1,
       "self": false,
       "phrase": "%s está sendo assombrado por um Poltergeist! (-%d)",
-      "range": [45, 60]
+      "range": [50, 65]
     },
     "level": 30
   }

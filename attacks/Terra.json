@@ -1,154 +1,91 @@
 [
   {
     "name": "Garra Rochosa",
-    "damage": [
-      15,
-      15
-    ],
+    "damage": [16, 17],
     "level": 1
   },
   {
     "name": "Investida de Areia",
-    "damage": [
-      14,
-      18
-    ],
+    "damage": [14, 18],
     "level": 2
   },
   {
     "name": "Casco de Pedra",
-    "damage": [
-      15,
-      22
-    ],
+    "damage": [15, 22],
     "level": 3
   },
   {
     "name": "Abalo Sísmico",
-    "damage": [
-      21,
-      26
-    ],
+    "damage": [21, 26],
     "level": 4
   },
   {
     "name": "Raiz Ascendente",
-    "damage": [
-      12,
-      16
-    ],
-    "effect": [
-      1,
-      0.8
-    ],
+    "damage": [12, 15],
+    "effect": [1, 0.85],
     "level": 5
   },
   {
     "name": "Impacto de Terra",
-    "damage": [
-      18,
-      24
-    ],
+    "damage": [18, 24],
     "level": 6
   },
   {
     "name": "Rocha Impactante",
-    "damage": [
-      25,
-      33
-    ],
+    "damage": [25, 33],
     "level": 7
   },
   {
     "name": "Muralha Natural",
-    "damage": [
-      10,
-      14
-    ],
-    "effect": [
-      3,
-      1
-    ],
+    "damage": [12, 15],
+    "effect": [3, 1],
     "level": 12
   },
   {
     "name": "Pisoteio Brutal",
-    "damage": [
-      28,
-      38
-    ],
+    "damage": [28, 38],
     "level": 14
   },
   {
     "name": "Enraizamento",
-    "damage": [
-      16,
-      20
-    ],
-    "effect": [
-      1,
-      0.85
-    ],
+    "damage": [18, 25],
+    "effect": [1, 0.85],
     "level": 16
   },
   {
     "name": "Tremor Pesado",
-    "damage": [
-      31,
-      43
-    ],
+    "damage": [31, 43],
     "level": 18
   },
   {
     "name": "Fragmentação",
-    "damage": [
-      31,
-      44
-    ],
+    "damage": [31, 44],
     "level": 20
   },
   {
     "name": "Ira da Montanha",
-    "damage": [
-      35,
-      50
-    ],
+    "damage": [35, 50],
     "level": 22
   },
   {
     "name": "Cascata de Pedras",
-    "damage": [
-      39,
-      52
-    ],
+    "damage": [40, 52],
     "level": 24
   },
   {
     "name": "Pulso Terrestre",
-    "damage": [
-      42,
-      55
-    ],
+    "damage": [45, 55],
     "level": 26
   },
   {
     "name": "Colosso Imóvel",
-    "damage": [
-      45,
-      60
-    ],
+    "damage": [45, 60],
     "level": 28
   },
   {
     "name": "Parede Rochosa",
-    "damage": [
-      35,
-      50
-    ],
-    "effect": [
-      8,
-      1
-    ],
+    "damage": [45, 50],
+    "effect": [8, 1],
     "level": 30
   }
 ]

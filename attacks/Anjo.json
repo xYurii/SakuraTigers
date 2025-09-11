@@ -101,18 +101,18 @@
   },
   {
     "name": "Julgamento",
-    "damage": [64, 71],
+    "damage": [65, 70],
     "level": 25
   },
   {
     "name": "Sopro Da Vida",
-    "damage": [55, 60],
+    "damage": [50, 60],
     "effect": [7, 1],
     "level": 27
   },
   {
     "name": "Apocalipse",
-    "damage": [75, 85],
+    "damage": [75, 80],
     "level": 30
   }
 ]

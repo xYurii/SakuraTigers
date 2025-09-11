@@ -1,12 +1,12 @@
 [
   {
     "name": "Garra Ardente",
-    "damage": [10, 22],
+    "damage": [10, 24],
     "level": 1
   },
   {
     "name": "Rajada Flamejante",
-    "damage": [12, 20],
+    "damage": [13, 21],
     "level": 2
   },
   {
@@ -60,7 +60,7 @@
       "chances": 1,
       "self": false,
       "phrase": "%s está pegando fogo! (-%d)",
-      "range": [5, 10]
+      "range": [5, 15]
     },
     "level": 16
   },
@@ -114,7 +114,7 @@
   },
   {
     "name": "Sol Incandescente",
-    "damage": [50, 55],
+    "damage": [45, 75],
     "level": 30
   }
 ]

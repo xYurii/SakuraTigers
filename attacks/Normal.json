@@ -1,12 +1,12 @@
 [
   {
     "name": "Arranhão Selvagem",
-    "damage": [14, 18],
+    "damage": [15, 18],
     "level": 1
   },
   {
     "name": "Investida Felina",
-    "damage": [13, 19],
+    "damage": [14, 19],
     "level": 2
   },
   {
@@ -17,7 +17,7 @@
   {
     "name": "Uivo de Intimidação",
     "damage": [10, 15],
-    "effect": [2, 0.5],
+    "effect": [2, 0.65],
     "level": 4
   },
   {
@@ -37,7 +37,7 @@
   {
     "name": "Sopro da Selva",
     "damage": [11, 14],
-    "effect": [2, 0.5],
+    "effect": [2, 0.55],
     "level": 9
   },
   {
@@ -85,7 +85,7 @@
   {
     "name": "Emboscada Silenciosa",
     "damage": [35, 45],
-    "effect": [2, 0.8],
+    "effect": [2, 0.75],
     "level": 25
   },
   {

@@ -20,8 +20,8 @@
     "level": 5,
     "effect": {
       "name": "Fenda Abissal",
-      "range": [6, 9],
-      "phrase": "%s olhou para o abismo e gritou em desespero (-%d)",
+      "range": [5, 10],
+      "phrase": "%s olhou para o abismo e gritou em desespero! (-%d)",
       "turns": 3,
       "chances": 1,
       "self": false,
@@ -29,7 +29,7 @@
     }
   },
   {
-    "name": "Despedaçar das Sombras",
+    "name": "Sombras Despedaçadas",
     "damage": [18, 26],
     "level": 7
   },
@@ -60,12 +60,12 @@
   },
   {
     "name": "Domínio Sombrio",
-    "damage": [29, 36],
+    "damage": [30, 35],
     "level": 19,
     "effect": {
       "name": "Domínio Sombrio",
-      "range": [15, 20],
-      "phrase": "%s está absorvendo poder das trevas (-%d)",
+      "range": [15, 25],
+      "phrase": "%s está absorvendo poder das trevas (%d)",
       "turns": 4,
       "chances": 1,
       "self": true,
@@ -79,12 +79,12 @@
   },
   {
     "name": "Correntes das Sombras",
-    "damage": [30, 38],
+    "damage": [35, 40],
     "level": 21,
     "effect": {
       "name": "Corrente das Sombras",
       "range": [0, 0],
-      "phrase": "%s está sendo amordaçado por seus medos (%d)",
+      "phrase": "%s está sendo amordaçado por seus medos! (%d)",
       "turns": 1,
       "chances": 1,
       "self": false,
@@ -93,17 +93,17 @@
   },
   {
     "name": "Predador do Submundo",
-    "damage": [40, 53],
+    "damage": [40, 54],
     "level": 23
   },
   {
     "name": "Eco da Morte",
-    "damage": [44, 58],
+    "damage": [45, 58],
     "level": 25
   },
   {
     "name": "Lança da noite Eterna",
-    "damage": [48, 63],
+    "damage": [50, 65],
     "level": 27
   },
   {
@@ -112,9 +112,9 @@
     "level": 30,
     "effect": {
       "name": "Julgamento Final",
-      "range": [55, 60],
-      "phrase": "%s está afundando o inimigo em sua sombra (%d%)",
-      "turns": 3,
+      "range": [80, 80],
+      "phrase": "%s está afundando o inimigo em sua sombra! (%d%)",
+      "turns": 2,
       "chances": 1,
       "self": true,
       "type": 6

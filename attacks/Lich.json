@@ -100,7 +100,7 @@
   },
   {
     "name": "Tumba Eterna",
-    "damage": [30, 35],
+    "damage": [32, 35],
     "effect": {
       "name": "Apodrecimento",
       "turns": 3,
@@ -148,7 +148,7 @@
   },
   {
     "name": "Ressurreição dos Mortos",
-    "damage": [40, 55],
+    "damage": [50, 55],
     "effect": {
       "name": "Horda de Mortos-Vivos",
       "turns": 3,
@@ -162,7 +162,7 @@
   },
   {
     "name": "Drenagem Vital",
-    "damage": [40, 50],
+    "damage": [55, 55],
     "effect": {
       "name": "Roubo de Vida",
       "turns": 2,
@@ -170,7 +170,7 @@
       "chances": 1,
       "self": true,
       "phrase": "%s está roubando a vitalidade dos inimigos! (+%d)",
-      "range": [40, 50]
+      "range": [55, 55]
     },
     "level": 27
   },
