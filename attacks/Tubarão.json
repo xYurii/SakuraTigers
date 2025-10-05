@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Investida Rápida",
+    "damage": [13, 16],
+    "level": 1
+  },
+  {
+    "name": "Patada de Onda",
+    "damage": [14, 17],
+    "level": 2
+  },
+  {
+    "name": "Mordida Frenética",
+    "damage": [17, 20],
+    "level": 3
+  },
+  {
+    "name": "Garras da Maré",
+    "damage": [17, 22],
+    "level": 4
+  },
+  {
+    "name": "Fúria Anfíbia",
+    "damage": [18, 15],
+    "level": 5,
+    "effect": {
+      "name": "Medo",
+      "range": [12, 15],
+      "phrase": "%s está sofrendo de temor (%d%)",
+      "turns": 1,
+      "chances": 0.65,
+      "self": false,
+      "type": 5
+    }
+  },
+  {
+    "name": "Corte Felino-Marinho",
+    "damage": [21, 24],
+    "level": 7
+  },
+  {
+    "name": "Golpe de Profundidade",
+    "damage": [25, 28],
+    "level": 10
+  },
+  {
+    "name": "Cauda Tsunâmica",
+    "damage": [29, 32],
+    "level": 12
+  },
+  {
+    "name": "Correnteza Fatal",
+    "damage": [33, 35],
+    "level": 14
+  },
+  {
+    "name": "Mandíbula Dilacerante",
+    "damage": [15, 15],
+    "level": 16,
+    "effect": {
+      "name": "Supressão",
+      "range": [0, 0],
+      "phrase": "%s está atordoado (-%d)",
+      "turns": 1,
+      "chances": 0.65,
+      "self": false,
+      "type": 3
+    }
+  },
+  {
+    "name": "Mordida Giratória",
+    "damage": [17, 17],
+    "level": 18,
+    "effect": {
+      "name": "Sangramento",
+      "range": [15, 17],
+      "phrase": "%s está esvaindo-se em sangue (-%d)",
+      "turns": 3,
+      "chances": 0.75,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Predador Absoluto",
+    "damage": [34, 36],
+    "level": 20
+  },
+  {
+    "name": "Cauda Barbatana",
+    "damage": [37, 39],
+    "level": 22
+  },
+  {
+    "name": "Chicote Submerso",
+    "damage": [41, 45],
+    "level": 24
+  },
+  {
+    "name": "Espiral do Predador",
+    "damage": [40, 40],
+    "level": 26,
+    "effect": {
+      "name": "Regeneração Marinha",
+      "range": [30, 30],
+      "phrase": "%s se curou (+%d)",
+      "turns": 1,
+      "chances": 0.68,
+      "self": true,
+      "type": 2
+    }
+  },
+  {
+    "name": "Mordida Hidrocinética",
+    "damage": [45, 51],
+    "level": 28
+  },
+  {
+    "name": "Cabeçada Sísmica",
+    "damage": [40, 45],
+    "level": 30,
+    "effect": {
+      "name": "Desnorteamento",
+      "range": [0, 0],
+      "phrase": "%s está desmaiado",
+      "turns": 1,
+      "chances": 0.64,
+      "self": false,
+      "type": 3
+    }
+  }
+]

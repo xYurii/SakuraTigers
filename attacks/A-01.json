@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Sha no Kame",
+    "damage": [100, 125],
+    "level": 1,
+    "effect": {
+      "name": "Hemorragia",
+      "turns": 2,
+      "type": 1,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s está se esvaindo em sangue! (-%d)",
+      "range": [100, 125]
+    }
+  },
+  {
+    "name": "Kirioshi",
+    "damage": [150, 150],
+    "level": 2,
+    "effect": {
+      "name": "Vulnerável",
+      "turns": 3,
+      "type": 5,
+      "chances": 1,
+      "self": false,
+      "phrase": "%s teve suas vulnerabilidades expostas! (%d%)",
+      "range": [150, 150]
+    }
+  },
+  {
+    "name": "Kazama",
+    "damage": [200, 200],
+    "level": 3,
+    "effect": {
+      "name": "Absorção de Sangue",
+      "turns": 1,
+      "type": 2,
+      "chances": 1,
+      "self": true,
+      "phrase": "%s está drenando a vitalidade do inimigo! (%d)",
+      "range": [200, 200]
+    }
+  }
+]

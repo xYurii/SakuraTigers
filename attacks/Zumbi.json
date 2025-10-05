@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Patas Ossudas",
+    "damage": [13, 15],
+    "level": 1
+  },
+  {
+    "name": "Salto Cadavérico",
+    "damage": [15, 18],
+    "level": 2
+  },
+  {
+    "name": "Investida Putrefata",
+    "damage": [16, 21],
+    "level": 3
+  },
+  {
+    "name": "Olhar da Necrose",
+    "damage": [17, 22],
+    "level": 4
+  },
+  {
+    "name": "Mordida Contagiosa",
+    "damage": [18, 25],
+    "level": 5,
+    "effect": {
+      "name": "Podridão",
+      "range": [10, 13],
+      "phrase": "%s está envenenado (-%d)",
+      "turns": 3,
+      "chances": 0.65,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Fissura Fúnebre",
+    "damage": [23, 26],
+    "level": 7
+  },
+  {
+    "name": "Garras Infectadas",
+    "damage": [16, 16],
+    "level": 10,
+    "effect": {
+      "name": "Contaminação",
+      "range": [13, 16],
+      "phrase": "%s está contaminado (-%d)",
+      "turns": 3,
+      "chances": 0.63,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Pisada Funesta",
+    "damage": [25, 29],
+    "level": 12
+  },
+  {
+    "name": "Rugido Apocalíptico",
+    "damage": [31, 36],
+    "level": 14
+  },
+  {
+    "name": "Sangue Ácido",
+    "damage": [20, 22],
+    "level": 16,
+    "effect": {
+      "name": "Corrosão",
+      "range": [20, 22],
+      "phrase": "%s está fragilizado",
+      "turns": 1,
+      "chances": 0.72,
+      "self": false,
+      "type": 5
+    }
+  },
+  {
+    "name": "Infecção Mortal",
+    "damage": [15, 23],
+    "level": 18,
+    "effect": {
+      "name": "Envenenamento",
+      "range": [15, 20],
+      "phrase": "%s está envenenado (-%d)",
+      "turns": 3,
+      "chances": 0.72,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Garras Necróticas",
+    "damage": [28, 33],
+    "level": 20
+  },
+  {
+    "name": "Carga Fúnebre",
+    "damage": [32, 37],
+    "level": 22
+  },
+  {
+    "name": "Coroa de Ossos",
+    "damage": [35, 40],
+    "level": 24
+  },
+  {
+    "name": "Predação Final",
+    "damage": [38, 43],
+    "level": 26
+  },
+  {
+    "name": "Fome Eterna",
+    "damage": [43, 49],
+    "level": 28,
+    "effect": {
+      "name": "Drenagem",
+      "range": [27, 30],
+      "phrase": "%s se curou (+%d)",
+      "turns": 1,
+      "chances": 0.67,
+      "self": true,
+      "type": 2
+    }
+  },
+  {
+    "name": "Colheita Final",
+    "damage": [45, 55],
+    "level": 30
+  }
+]

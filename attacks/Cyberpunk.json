@@ -1,0 +1,141 @@
+[
+  {
+    "name": "Garras Ópticas",
+    "damage": [13, 21],
+    "level": 1
+  },
+  {
+    "name": "Rasgo de Plasma",
+    "damage": [15, 22],
+    "level": 2
+  },
+  {
+    "name": "Investida Futurista",
+    "damage": [19, 24],
+    "level": 3
+  },
+  {
+    "name": "Corte de Latência",
+    "damage": [12, 21],
+    "level": 4,
+    "effect": {
+      "name": "Exploit",
+      "range": [55, 73],
+      "phrase": "%s está com falha de segurança (%d%)",
+      "turns": 2,
+      "chances": 0.9,
+      "self": false,
+      "type": 5
+    }
+  },
+  {
+    "name": "Fúria de Silício",
+    "damage": [21, 25],
+    "level": 5
+  },
+  {
+    "name": "Salto Quântico",
+    "damage": [22, 31],
+    "level": 7
+  },
+  {
+    "name": "Lâminas de Neón",
+    "damage": [24, 27],
+    "level": 10
+  },
+  {
+    "name": "Arrancada Cibernética",
+    "damage": [23, 28],
+    "level": 12
+  },
+  {
+    "name": "Estocada de Fóton",
+    "damage": [23, 25],
+    "level": 14,
+    "effect": {
+      "name": "Explosão de Dados",
+      "range": [35, 45],
+      "phrase": "%s está se corroendo por dentro (-%d)",
+      "turns": 2,
+      "chances": 0.9,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Eclipse de Bit",
+    "damage": [25, 37],
+    "level": 16
+  },
+  {
+    "name": "Corte Holográfico",
+    "damage": [31, 42],
+    "level": 18,
+    "effect": {
+      "name": "Desconexão",
+      "range": [0, 0],
+      "phrase": "%s teve seu sistema desligado",
+      "turns": 1,
+      "chances": 0.8,
+      "self": false,
+      "type": 3
+    }
+  },
+  {
+    "name": "Garras Bioluminescentes",
+    "damage": [31, 40],
+    "level": 20
+  },
+  {
+    "name": "Proteção de Rede",
+    "damage": [33, 40],
+    "level": 22,
+    "effect": {
+      "name": "Firewall",
+      "range": [25, 35],
+      "phrase": "%s armou uma barreira sintética (%d%)",
+      "turns": 1,
+      "chances": 0.9,
+      "self": true,
+      "type": 4
+    }
+  },
+  {
+    "name": "Domínio de Rede",
+    "damage": [32, 45],
+    "level": 24
+  },
+  {
+    "name": "Nanovírus",
+    "damage": [42, 53],
+    "level": 26,
+    "effect": {
+      "name": "Anomavírus",
+      "range": [70, 75],
+      "phrase": "%s está com um vírus anomalítico (-%d)",
+      "turns": 3,
+      "chances": 0.9,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Matriz",
+    "damage": [59, 73],
+    "level": 28
+  },
+  {
+    "name": "Sobrecarga Total",
+    "damage": [55, 60],
+    "level": 30,
+    "effect": {
+      "name": "Circuito",
+      "range": [75, 85],
+      "phrase": "%s está em estado instável (%d%)",
+      "turns": 1,
+      "chances": 0.9,
+      "self": false,
+      "type": 5
+    }
+  }
+]
