@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Investida Abrasadora",
+    "damage": [27, 33],
+    "level": 1
+  },
+  {
+    "name": "Chama Primordial",
+    "damage": [28, 42],
+    "level": 2,
+    "effect": {
+      "name": "Ardor",
+      "range": [30, 35],
+      "phrase": "%s está em chamas que canta sua ruína (-%d)",
+      "turns": 4,
+      "chances": 1,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Fúria Incandescente",
+    "damage": [50, 55],
+    "level": 3,
+    "effect": {
+      "name": "Fulgor",
+      "range": [45, 55],
+      "phrase": "%s está queimando por dentro (%d%)",
+      "turns": 3,
+      "chances": 1,
+      "self": false,
+      "type": 5
+    }
+  },
+  {
+    "name": "Lâminas de Fogo",
+    "damage": [40, 45],
+    "level": 5
+  },
+  {
+    "name": "Inferno Interior",
+    "damage": [40, 56],
+    "level": 7
+  },
+  {
+    "name": "Explosão em Brasas",
+    "damage": [40, 55],
+    "level": 10,
+    "effect": {
+      "name": "Combustão",
+      "range": [40, 45],
+      "phrase": "%s está sendo consumido pelo fogo (-%d)",
+      "turns": 4,
+      "chances": 1,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Fogo Ancestral",
+    "damage": [65, 70],
+    "level": 12,
+    "effect": {
+      "name": "Inabalável",
+      "range": [70, 80],
+      "phrase": "%s se banhou com chamas protetoras (%s%)",
+      "turns": 1,
+      "chances": 1,
+      "self": true,
+      "type": 4
+    }
+  },
+  {
+    "name": "Sopro Incendiário",
+    "damage": [65, 75],
+    "level": 14
+  },
+  {
+    "name": "Labareda Implacável",
+    "damage": [70, 80],
+    "level": 16
+  },
+  {
+    "name": "Tornado Flamejante",
+    "damage": [65, 70],
+    "level": 19,
+    "effect": {
+      "name": "Fulminação",
+      "range": [65, 65],
+      "phrase": "%s está se desfazendo em cinzas (-%d)",
+      "turns": 4,
+      "chances": 1,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Onda de Calor",
+    "damage": [70, 80],
+    "level": 21,
+    "effect": {
+      "name": "Fervor",
+      "range": [85, 90],
+      "phrase": "%s está usando calor intenso para devolver crepitação (%d%)",
+      "turns": 3,
+      "chances": 1,
+      "self": false,
+      "type": 6
+    }
+  },
+  {
+    "name": "Espiral de Fogo",
+    "damage": [65, 100],
+    "level": 23
+  },
+  {
+    "name": "Abismo em Chamas",
+    "damage": [85, 110],
+    "level": 24
+  },
+  {
+    "name": "Incineração Absoluta",
+    "damage": [70, 80],
+    "level": 26,
+    "effect": {
+      "name": "Carbonização",
+      "range": [65, 70],
+      "phrase": "%s está em cinzas diante da perdição (-%d)",
+      "turns": 3,
+      "chances": 1,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Caos Total",
+    "damage": [120, 150],
+    "level": 28
+  },
+  {
+    "name": "Fenda de Fogo",
+    "damage": [165, 175],
+    "level": 30
+  },
+  {
+    "name": "Tormenta Ardente",
+    "damage": [180, 200],
+    "level": 32,
+    "effect": {
+      "name": "Fagulha",
+      "range": [190, 220],
+      "phrase": "%s está vulnerável pelas chamas que drenam a alma (%d%)",
+      "turns": 3,
+      "chances": 1,
+      "self": false,
+      "type": 5
+    }
+  },
+  {
+    "name": "Umbra Ígnea",
+    "damage": [230, 250],
+    "level": 35,
+    "effect": {
+      "name": "Umbra",
+      "range": [130, 150],
+      "phrase": "%s está em chamas que não cessam (-%d)",
+      "turns": 5,
+      "chances": 1,
+      "self": false,
+      "type": 1
+    }
+  }
+]

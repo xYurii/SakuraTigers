@@ -1,0 +1,141 @@
+[
+  {
+    "name": "Disparo de Caldeira",
+    "damage": [17, 22],
+    "level": 1
+  },
+  {
+    "name": "Vapor Cortante",
+    "damage": [20, 25],
+    "level": 2
+  },
+  {
+    "name": "Válvula de Pressão",
+    "damage": [18, 21],
+    "level": 3,
+    "effect": {
+      "name": "Vaporização",
+      "range": [10, 15],
+      "phrase": "%s está sendo consumido pelo calor do vapor acumulado (-%d)",
+      "turns": 3,
+      "chances": 0.8,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Catraca Mortal",
+    "damage": [22, 25],
+    "level": 4
+  },
+  {
+    "name": "Canhão de Cobre",
+    "damage": [25, 31],
+    "level": 5
+  },
+  {
+    "name": "Reparo Autômato",
+    "damage": [24, 25],
+    "level": 7,
+    "effect": {
+      "name": "Autorreparo",
+      "range": [22, 27],
+      "phrase": "O sistema interno de %s entra em reajuste (+%d)",
+      "turns": 2,
+      "chances": 0.8,
+      "self": true,
+      "type": 2
+    }
+  },
+  {
+    "name": "Laço Metálico",
+    "damage": [32, 40],
+    "level": 10
+  },
+  {
+    "name": "Tiro Corrosivo",
+    "damage": [34, 45],
+    "level": 12
+  },
+  {
+    "name": "Tranco Cinético",
+    "damage": [25, 42],
+    "level": 14
+  },
+  {
+    "name": "Blindagem Industria",
+    "damage": [32, 40],
+    "level": 16,
+    "effect": {
+      "name": "Blindagem",
+      "range": [37, 37],
+      "phrase": "Um escudo de metal fundido envolve %s (%d%)",
+      "turns": 1,
+      "chances": 1,
+      "self": true,
+      "type": 4
+    }
+  },
+  {
+    "name": "Cilindro Perfurante",
+    "damage": [47, 50],
+    "level": 18
+  },
+  {
+    "name": "Engenheiro Mestre",
+    "damage": [35, 40],
+    "level": 20,
+    "effect": {
+      "name": "Fortificação",
+      "range": [65, 70],
+      "phrase": "%s recebe força mecânica (%d%)",
+      "turns": 1,
+      "chances": 1,
+      "self": false,
+      "type": 5
+    }
+  },
+  {
+    "name": "Aríete Hidráulico",
+    "damage": [54, 60],
+    "level": 22
+  },
+  {
+    "name": "Estouro Cronometrado",
+    "damage": [50, 50],
+    "level": 24,
+    "effect": {
+      "name": "Combustão",
+      "range": [30, 35],
+      "phrase": "%s está queimando por dentro (-%d)",
+      "turns": 3,
+      "chances": 1,
+      "self": false,
+      "type": 1
+    }
+  },
+  {
+    "name": "Sinfonia Mecânica",
+    "damage": [64, 71],
+    "level": 26
+  },
+  {
+    "name": "Crepúsculo das Engrenagens",
+    "damage": [50, 55],
+    "level": 28,
+    "effect": {
+      "name": "Reverberação",
+      "range": [65, 70],
+      "phrase": "%s canaliza o impacto sofrido e devolve com precisão mecânica (%d%)",
+      "turns": 3,
+      "chances": 0.8,
+      "self": true,
+      "type": 6
+    }
+  },
+  {
+    "name": "Bioexplosão Nitroácida",
+    "damage": [72, 81],
+    "level": 30
+  }
+]
